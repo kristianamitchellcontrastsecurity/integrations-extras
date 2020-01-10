@@ -17,11 +17,13 @@ logs_enabled: true
 * Create a new `conf.yaml` file.
 * Add a custom log collection configuration group.
 
-      logs:
-        - type: file
-          path: /path/to/contrast/security.log
-          service: contrast
-          source: contrastsecurity
+```
+  logs:
+    - type: file
+    path: /path/to/contrast/security.log
+    service: contrast
+    source: contrastsecurity
+```
 
 For more information on logs: https://docs.contrastsecurity.com/installation-setupconfig.html#log
 
